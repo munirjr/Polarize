@@ -16,7 +16,10 @@
 		<link href="/css/polarize.css" rel="stylesheet" type="text/css"/>	
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link href="/css/magnific-popup.css" rel="stylesheet">
+
+ 
     </head>
     <body>
         <section id="main">
@@ -128,14 +131,81 @@
                     </div>
                 </div>
             </section>
+            <section id="instalacao">
+                <div class="container">
+                    <div class="grid-container">
+                        <div class="item1">
+                            <h3>
+                                Instalação
+                                <span></span>
+                            </h3>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
+                        </div>
+                        <div class="item2">
+                            <a class="image-link" href="images/instalacao01big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao01.jpg"></a>
+                        </div>
+                        <div class="item3">
+                            <a class="image-link" href="images/instalacao02big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao02.jpg"></a>
+                        </div>  
+                        <div class="item4">
+                            <a class="image-link" href="images/instalacao03big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao03.jpg"></a>
+                        </div>
+                        <div class="item5">
+                            <a class="image-link" href="images/instalacao04big.jpg" title="Informações a respeito da imagem"><img src="images/instalacaogit 04.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="manutencao">
+                    <div class="container">
+                        <div class="grid-container">
+                            <div class="item1">
+                                <h3>
+                                    Manutenção
+                                    <span></span>
+                                </h3>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
+                            </div>
+                            <div class="item2">
+                                <a class="image-link" href="images/manutencao01big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao01.jpg"></a>
+                            </div>
+                            <div class="item3">
+                                <a class="image-link" href="images/manutencao02big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao02.jpg"></a>
+                            </div>  
+                            <div class="item4">
+                                <a class="image-link" href="images/manutencao03big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao03.jpg"></a>
+                            </div>
+                            <div class="item5">
+                                <a class="image-link" href="images/manutencao04big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao04.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </section>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="scripts/polarize.js"></script>
+        <script src="scripts/jquery.magnific-popup.min.js"></script>
+
         <script>
             $(document).ready(function(){
                 $('.slider').bxSlider({
                     "controls":false
+                });
+                $('.image-link').magnificPopup({
+                    type: 'image',
+                    mainClass: 'mfp-with-zoom', 
+                    titleSrc: 'title',
+                    zoom: {
+                        enabled: true,
+                        duration: 300,
+                        easing: 'ease-in-out', 
+                        opener: function(openerElement) {
+                        return openerElement.is('img') ? openerElement : openerElement.find('img');
+                        }
+                    }
                 });
             });
         </script>

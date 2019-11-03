@@ -1,4 +1,5 @@
 *{box-sizing:border-box;}
+#main{max-width:1960px;width:100%;font-family:'Roboto',sans-serif;}
 #main{max-width:1960px;width:100%;font-family: 'Roboto', sans-serif;}
 strong{font-weight:700;}
 .container{max-width:1366px;margin:0 auto;}
@@ -49,6 +50,7 @@ header .menu li ul li a:hover{color:#fff;}
 #quem-somos{width:100%;float:left;padding:40px 0;}
 #quem-somos .container{padding:50px 100px;}
 @media (max-width:1024px) {
+    #quem-somos .container{padding:30px;}
     #quem-somos .container{padding:50px 30px;}
 }
 #quem-somos .fotos{width:40%;float:left;}
@@ -95,3 +97,91 @@ display: grid;
 @media (max-width:1024px) {
     #quem-somos .texto p:last-child{padding:0;}
 }
+.mfp-title{font-family:'Roboto',sans-serif;}
+#instalacao{width:100%;float:left;background:#ececec;}
+#instalacao img{width:100%;height:auto;}
+#instalacao .container{padding:50px 100px;}
+@media (max-width:1024px) {
+    #instalacao .container{padding:30px;}
+}
+#instalacao .item2,#instalacao .item3,#instalacao .item5,#instalacao .item5{transition:opacity 0.5s;position:relative;}
+#instalacao .item2 title{visibility:hidden;}
+#instalacao .item2:hover,#instalacao .item3:hover,#instalacao .item4:hover,#instalacao .item5:hover{opacity:0.4;}
+#instalacao .item1{grid-area:texto;height:265px;}
+#instalacao .item1 h3{padding-bottom:30px;font-size:1.5rem;color:#1f3c8c;font-weight:700;position:relative;}
+#instalacao .item1 h3 span{width:200px;height:5px;background:#50b9ce;position:absolute;top:30px;left:0;}
+#instalacao .item1 p{padding-bottom:15px;color:#666;line-height:1.2rem;}
+#instalacao .item2 {grid-area: foto1; }
+#instalacao .item3 {grid-area: foto2;height:265px; }
+#instalacao .item4 {grid-area: foto3; }
+#instalacao .item5 {grid-area: foto4;}
+@media (max-width:1024px) {
+    #instalacao .item1,#instalacao .item2,#instalacao .item3,#instalacao .item4,#instalacao .item5{height:auto;}
+}
+#instalacao .grid-container {
+  display: grid;
+  grid-template-areas:
+    'texto texto texto texto foto1 foto1 foto1 foto1'
+    'foto2 foto2 foto2 foto2 foto3 foto3 foto4 foto4';
+  grid-gap:15px;
+}
+@media (max-width:1024px) {
+    #instalacao .grid-container {
+        display: grid;
+        grid-template-areas:
+        'texto texto texto texto texto texto texto texto'
+        'foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1'
+        'foto2 foto2 foto2 foto2 foto2 foto2 foto2 foto2'
+        'foto3 foto3 foto3 foto3 foto4 foto4 foto4 foto4';
+    }
+}
+#instalacao .grid-container > div:nth-child(1){padding:30px}
+@media (max-width:1024px) {
+    #instalacao .grid-container > div:nth-child(1){padding:0}
+}
+#manutencao{width:100%;float:left}
+#manutencao img{width:100%;height:auto;}
+#manutencao .container{padding:50px 100px;}
+@media (max-width:1024px) {
+    #manutencao .container{padding:30px;}
+}
+#manutencao .item2,#manutencao .item3,#manutencao .item5,#manutencao .item5{transition:opacity 0.5s;position:relative;}
+#manutencao .item2 title{visibility:hidden;}
+#manutencao .item2:hover,#manutencao .item3:hover,#manutencao .item4:hover,#manutencao .item5:hover{opacity:0.4;}
+#manutencao .item1{grid-area:texto;height:265px;}
+#manutencao .item1 h3{padding-bottom:30px;font-size:1.5rem;color:#1f3c8c;font-weight:700;position:relative;}
+#manutencao .item1 h3 span{width:200px;height:5px;background:#50b9ce;position:absolute;top:30px;left:0;}
+#manutencao .item1 p{padding-bottom:15px;color:#666;line-height:1.2rem;}
+#manutencao .item2 {grid-area: foto1; }
+#manutencao .item3 {grid-area: foto2;height:265px; }
+#manutencao .item4 {grid-area: foto3; }
+#manutencao .item5 {grid-area: foto4;}
+@media (max-width:1024px) {
+    #manutencao .item1,#manutencao .item2,#manutencao .item3,#manutencao .item4,#manutencao .item5{height:auto;}
+}
+#manutencao .grid-container {
+  display: grid;
+  grid-template-areas:
+    'texto texto texto texto foto1 foto1 foto1 foto1'
+    'foto2 foto2 foto3 foto3 foto4 foto4 foto4 foto4';
+  grid-gap:15px;
+}
+@media (max-width:1024px) {
+    #manutencao .grid-container {
+        display: grid;
+        grid-template-areas:
+        'texto texto texto texto texto texto texto texto'
+        'foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1'
+        'foto2 foto2 foto2 foto2 foto2 foto2 foto2 foto2'
+        'foto3 foto3 foto3 foto3 foto3 foto3 foto3 foto3'
+        'foto4 foto4 foto4 foto4 foto4 foto4 foto4 foto4';
+    }
+}
+#manutencao .grid-container > div:nth-child(1){padding:30px}
+@media (max-width:1024px) {
+    #manutencao .grid-container > div:nth-child(1){padding:0}
+}
+.mfp-with-zoom .mfp-container,.mfp-with-zoom.mfp-bg {opacity: 0;-webkit-backface-visibility: hidden;-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
+.mfp-with-zoom.mfp-ready .mfp-container {opacity: 1;}
+.mfp-with-zoom.mfp-ready.mfp-bg {opacity: 0.8;}
+.mfp-with-zoom.mfp-removing .mfp-container,.mfp-with-zoom.mfp-removing.mfp-bg {opacity: 0;}

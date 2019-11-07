@@ -8,7 +8,24 @@
 		<meta name="keywords" content=""/>
 		<meta name="msapplication-TileColor" content="#ca2a60"/>
 		<meta name="msapplication-TileImage" content="@{~/imagens/favicon/ms-icon-144x144.png}"/>
-		<meta name="theme-color" content="#ca2a60"/>
+		<meta name="theme-color" content="#1f3c8c"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+        <link rel="manifest" href="/images/manifest.json">
+        <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon"/>
         <title>Polarize Ar Condicionado</title>
@@ -22,10 +39,10 @@
  
     </head>
     <body>
-        <span class="ligue"></span>
-        <span class="whats"></span>
+        <a href="tel:1112345678" class="floatbtn ligue"><i class="fas fa-phone"></i></a>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511985552004&text=Quer%20 falar%20conosco?%20Envie%20um%20oi%20pelo%20WhatsApp%20!" class="floatbtn whats"><i class="fab fa-whatsapp"></i></a>
         <section id="main">
-            <header>
+            <header id="top">
                 <div class="container">
                     <div class="logo">
                         <img src="images/logo.svg" alt="Polarize Ar Condicionado">
@@ -33,7 +50,7 @@
                     <div class="phones">
                         <div class="contact">
                             <div class="icon">
-                                <img src="images/ico-local.svg">
+                                <img src="images/ico-local.svg" alt="Polarize Ar Condicionado">
                             </div>
                             <div class="number">
                                 <p></p>Atendemos toda<br/>Grande São Paulo</p>
@@ -41,7 +58,7 @@
                         </div>
                         <div class="contact">
                             <div class="icon">
-                                <img src="images/ico-wreck.svg">
+                                <img src="images/ico-wreck.svg" alt="Polarize Ar Condicionado">
                             </div>
                             <div class="number">
                                 <p>9444-3333<br/><strong>Manutenção</strong></p>
@@ -49,7 +66,7 @@
                         </div>
                         <div class="contact">
                             <div class="icon">
-                                <img src="images/ico-tool.svg">
+                                <img src="images/ico-tool.svg" alt="Polarize Ar Condicionado">
                             </div>
                             <div class="number">
                                     <p>2222-5000<br/><strong>Instalação</strong></p>
@@ -58,19 +75,18 @@
                     </div>
                     <nav class="menu">
                         <ul>
-                            <li><a href="javascript:void">Quem somos</a></li>
+                            <li><a href="#quem-somos">Quem somos</a></li>
                             <li>
                                 <a href="javascript:void" class="services">Serviços <i class="fas fa-angle-down"></i></a>
                                 <ul>
-                                    <li><a href="javascript:void">Instalação</a></li>
-                                    <li><a href="javascript:void">Manutenção</a></li>
-                                    <li><a href="javascript:void">Nossas obras</a></li>
+                                    <li><a href="#instalacao">Instalação</a></li>
+                                    <li><a href="#manutencao">Manutenção</a></li>
+                                    <li><a href="#obras">Nossas obras</a></li>
                                 </ul>
                             </li>
-                            <li><a href="javascript:void">Produtos</a></li>
-                            <li><a href="javascript:void">Higienização</a></li>
-                            <li><a href="javascript:void">Orçamento</a></li>
-                            <li><a href="javascript:void">Contato</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#higienizacao">Higienização</a></li>
+                            <li><a href="#contato">Contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -83,19 +99,18 @@
                         <span class="close"><i class="fas fa-times"></i></span>
                     </div>
                     <ul>
-                        <li class="item"><a href="javascript:void">Quem somos</a></li>
+                        <li class="item"><a href="#quem-somos">Quem somos</a></li>
                         <li>
                             <a href="javascript:void">Serviços <i class="fas fa-angle-down"></i></a>
                             <ul class="service">
-                                <li class="item"><a href="javascript:void">Instalação</a></li>
-                                <li class="item"><a href="javascript:void">Manutenção</a></li>
-                                <li class="item"><a href="javascript:void">Nossas obras</a></li>
+                                <li class="item"><a href="#instalacao">Instalação</a></li>
+                                <li class="item"><a href="#manutencao">Manutenção</a></li>
+                                <li class="item"><a href="#obras">Nossas obras</a></li>
                             </ul>
                         </li>
-                        <li class="item"><a href="javascript:void">Produtos</a></li>
-                        <li class="item"><a href="javascript:void">Higienização</a></li>
-                        <li class="item"><a href="javascript:void">Orçamento</a></li>
-                        <li class="item"><a href="javascript:void">Contato</a></li>
+                        <li class="item"><a href="#produtos">Produtos</a></li>
+                        <li class="item"><a href="#higienizacao">Higienização</a></li>
+                        <li class="item"><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </header>
@@ -107,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="one">
+                <div class="two">
                     <div class="container">
                         <div class="content">
                             <p>Excelência e Qualidade em Ar Condicionado</p>
@@ -145,16 +160,16 @@
                             <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
                         </div>
                         <div class="item2">
-                            <a class="image-link" href="images/instalacao01big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao01.jpg"></a>
+                            <a class="image-link" href="images/instalacao01big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao01.jpg" alt="Polarize Ar Condicionado"></a>
                         </div>
                         <div class="item3">
-                            <a class="image-link" href="images/instalacao02big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao02.jpg"></a>
+                            <a class="image-link" href="images/instalacao02big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao02.jpg" alt="Polarize Ar Condicionado"></a>
                         </div>  
                         <div class="item4">
-                            <a class="image-link" href="images/instalacao03big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao03.jpg"></a>
+                            <a class="image-link" href="images/instalacao03big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao03.jpg" alt="Polarize Ar Condicionado"></a>
                         </div>
                         <div class="item5">
-                            <a class="image-link" href="images/instalacao04big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao04.jpg"></a>
+                            <a class="image-link" href="images/instalacao04big.jpg" title="Informações a respeito da imagem"><img src="images/instalacao04.jpg" alt="Polarize Ar Condicionado"></a>
                         </div>
                     </div>
                 </div>
@@ -171,16 +186,16 @@
                                 <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.</p>
                             </div>
                             <div class="item2">
-                                <a class="image-link" href="images/manutencao01big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao01.jpg"></a>
+                                <a class="image-link" href="images/manutencao01big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao01.jpg" alt="Polarize Ar Condicionado"></a>
                             </div>
                             <div class="item3">
-                                <a class="image-link" href="images/manutencao02big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao02.jpg"></a>
+                                <a class="image-link" href="images/manutencao02big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao02.jpg" alt="Polarize Ar Condicionado"></a>
                             </div>  
                             <div class="item4">
-                                <a class="image-link" href="images/manutencao03big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao03.jpg"></a>
+                                <a class="image-link" href="images/manutencao03big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao03.jpg" alt="Polarize Ar Condicionado"></a>
                             </div>
                             <div class="item5">
-                                <a class="image-link" href="images/manutencao04big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao04.jpg"></a>
+                                <a class="image-link" href="images/manutencao04big.jpg" title="Informações a respeito da imagem"><img src="images/manutencao04.jpg" alt="Polarize Ar Condicionado"></a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +207,7 @@
                             <span></span>
                         </h3>
                         <div class="room">
-                            <a class="image-link" href="images/obras01big.jpg" title="Informações a respeito da imagem"><img src="images/obras01.jpg"></a>
+                            <a class="image-link" href="images/obras01big.jpg" title="Informações a respeito da imagem"><img src="images/obras01.jpg" alt="Polarize Ar Condicionado"></a>
                         </div>
                         <div class="explanation">
                             <span class="hat">Mauris rutrum nisi ut justo auctor</span>
@@ -204,36 +219,36 @@
                         <div class="container">
                             <div class="flex-container">
                                 <div>
-                                    <a class="image-link" href="images/obras02big.jpg" title="Informações a respeito da imagem"><img src="images/obras02.jpg"></a>
+                                    <a class="image-link" href="images/obras02big.jpg" title="Informações a respeito da imagem"><img src="images/obras02.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                                 <div>
-                                    <a class="image-link" href="images/obras03big.jpg" title="Informações a respeito da imagem"><img src="images/obras03.jpg"></a>
+                                    <a class="image-link" href="images/obras03big.jpg" title="Informações a respeito da imagem"><img src="images/obras03.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                                 <div>
-                                    <a class="image-link" href="images/obras04big.jpg" title="Informações a respeito da imagem"><img src="images/obras04.jpg"></a>
+                                    <a class="image-link" href="images/obras04big.jpg" title="Informações a respeito da imagem"><img src="images/obras04.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>  
                                 <div>
-                                    <a class="image-link" href="images/obras05big.jpg" title="Informações a respeito da imagem"><img src="images/obras05.jpg"></a>
+                                    <a class="image-link" href="images/obras05big.jpg" title="Informações a respeito da imagem"><img src="images/obras05.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                                 <div>
-                                    <a class="image-link" href="images/obras06big.jpg" title="Informações a respeito da imagem"><img src="images/obras06.jpg"></a>
+                                    <a class="image-link" href="images/obras06big.jpg" title="Informações a respeito da imagem"><img src="images/obras06.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                             </div>
                             <div class="flex-container">
                                     <div>
-                                        <a class="image-link" href="images/obras02big.jpg" title="Informações a respeito da imagem"><img src="images/obras02.jpg"></a>
+                                        <a class="image-link" href="images/obras02big.jpg" title="Informações a respeito da imagem"><img src="images/obras02.jpg" alt="Polarize Ar Condicionado"></a>
                                     </div>
                                     <div>
-                                        <a class="image-link" href="images/obras03big.jpg" title="Informações a respeito da imagem"><img src="images/obras03.jpg"></a>
+                                        <a class="image-link" href="images/obras03big.jpg" title="Informações a respeito da imagem"><img src="images/obras03.jpg" alt="Polarize Ar Condicionado"></a>
                                     </div>
                                     <div>
-                                        <a class="image-link" href="images/obras04big.jpg" title="Informações a respeito da imagem"><img src="images/obras04.jpg"></a>
+                                        <a class="image-link" href="images/obras04big.jpg" title="Informações a respeito da imagem"><img src="images/obras04.jpg" alt="Polarize Ar Condicionado"></a>
                                     </div>  
                                     <div>
-                                        <a class="image-link" href="images/obras05big.jpg" title="Informações a respeito da imagem"><img src="images/obras05.jpg"></a>
+                                        <a class="image-link" href="images/obras05big.jpg" title="Informações a respeito da imagem"><img src="images/obras05.jpg" alt="Polarize Ar Condicionado"></a>
                                     </div>
                                     <div>
-                                        <a class="image-link" href="images/obras06big.jpg" title="Informações a respeito da imagem"><img src="images/obras06.jpg"></a>
+                                        <a class="image-link" href="images/obras06big.jpg" title="Informações a respeito da imagem"><img src="images/obras06.jpg" alt="Polarize Ar Condicionado"></a>
                                     </div>
                                 </div>
                         </div>
@@ -249,10 +264,10 @@
                             </div>
                             <div class="mini-galery">
                                 <div class="photo">
-                                    <a class="image-link" href="images/higiene01big.jpg" title="Informações a respeito da imagem"><img src="images/higiene01.jpg"></a>
+                                    <a class="image-link" href="images/higiene01big.jpg" title="Informações a respeito da imagem"><img src="images/higiene01.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                                 <div id="shoot" class="photo">
-                                    <a class="image-link" href="images/higiene02big.jpg" title="Informações a respeito da imagem"><img src="images/higiene02.jpg"></a>
+                                    <a class="image-link" href="images/higiene02big.jpg" title="Informações a respeito da imagem"><img src="images/higiene02.jpg" alt="Polarize Ar Condicionado"></a>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +336,7 @@
                                 <div class="flex-container">
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -331,7 +346,7 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -341,7 +356,7 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -351,49 +366,7 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
-                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
-                                        </div>
-                                        <div class="legend">
-                                            <p class="product-name">Nome do produto</p>
-                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="flex-container">
-                                    <div>
-                                        <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
-                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
-                                        </div>
-                                        <div class="legend">
-                                            <p class="product-name">Nome do produto</p>
-                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
-                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
-                                        </div>
-                                        <div class="legend">
-                                            <p class="product-name">Nome do produto</p>
-                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
-                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
-                                        </div>
-                                        <div class="legend">
-                                            <p class="product-name">Nome do produto</p>
-                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -405,7 +378,7 @@
                                   <div class="flex-container">
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -415,7 +388,7 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -425,7 +398,7 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -435,7 +408,49 @@
                                     </div>
                                     <div>
                                         <div class="type">
-                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg"></a>
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
+                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
+                                        </div>
+                                        <div class="legend">
+                                            <p class="product-name">Nome do produto</p>
+                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="flex-container">
+                                    <div>
+                                        <div class="type">
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
+                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
+                                        </div>
+                                        <div class="legend">
+                                            <p class="product-name">Nome do produto</p>
+                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="type">
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
+                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
+                                        </div>
+                                        <div class="legend">
+                                            <p class="product-name">Nome do produto</p>
+                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="type">
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
+                                            <span class="ico"><i class="fas fa-search-plus"></i></span>
+                                        </div>
+                                        <div class="legend">
+                                            <p class="product-name">Nome do produto</p>
+                                            <p class="resume">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="type">
+                                            <a class="image-link" href="images/aparelho01big.jpg" title="Informações a respeito da imagem"><img src="images/aparelho01.jpg" alt="Polarize Ar Condicionado"></a>
                                             <span class="ico"><i class="fas fa-search-plus"></i></span>
                                         </div>
                                         <div class="legend">
@@ -447,6 +462,55 @@
                             </div>
                         </div>
                     </section>
+                    <section id="contato">
+                        <div class="container">
+                            <h3>
+                                Contato
+                                <span></span>
+                            </h3>
+                            <form>
+                                <div class="side">
+                                    <div class="field">
+                                        <input type="text" placeholder="Nome" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="email" placeholder="E-mail" required>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" placeholder="Telefone" required>
+                                    </div>
+                                </div>
+                                <div class="side">
+                                    <div class="field">
+                                        <textarea placeholder="Mensagem" required></textarea>
+                                    </div>
+                                    <div class="field">
+                                        <input type="submit" value="Enviar">
+                                    </div>
+                                <div class="side"></div>
+                            </form>
+                        </div>
+                    </section>
+                    <footer>
+                        <a href="#top" class="go-up"><i class="fas fa-angle-up"></i></a>
+                        <div class="container">
+                            <div class="half">
+                                <div class="logo-footer">
+                                    <img src="images/logo-footer.svg" alt="Polarize Ar Condicionado">
+                                </div>
+                            </div>
+                            <div class="half">
+                                <div class="social-media">
+                                    <a href="javascript:void"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="javascript:void"><i class="fab fa-twitter"></i></a>
+                                    <a href="javascript:void"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy">
+                            &copy; Polarize | 2019
+                        </div>
+                    </footer>
                 </section>
         </section>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -459,7 +523,9 @@
         <script>
             $(document).ready(function(){
                 $('.slider').bxSlider({
-                    "controls":false
+                    "controls":false,
+                    "auto": true,
+                    "pause": 7000
                 });
                 $('.image-link').magnificPopup({
                     type: 'image',

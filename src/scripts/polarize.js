@@ -18,3 +18,13 @@ $(document).on('click','.mobile-menu li', function(){
     $(this).children('ul').slideToggle();
 });
 
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	} /* speed */ );
+});
+

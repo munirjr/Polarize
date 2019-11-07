@@ -48,16 +48,13 @@ header .menu li ul li a:hover{color:#fff;}
 .actived{-webkit-transform:translateX(-100%);-moz-transform:translateX(-100%);-ms-transform: translateX(-100%);transform:translateX(-100%);}
 .bx-wrapper{height:450px;margin-bottom:0 !important;border:0 !important;}
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{background:#1f3c8c !important;}
-<<<<<<< HEAD
 .one,.two{width:100%;height:450px;float:left;background:url(../images/banner01.jpg) center center;}
 .two{background:url(../images/banner02.jpg) center center;}
 .one .content,.two .content{width:35%;padding:0 20px;font-size:2.5rem;line-height:3rem;color:#fff;font-weight:700;position:absolute;bottom:80px;text-shadow:3px 3px 5px #333;}
 .two .content{color:#1f3c8c;text-shadow:2px 2px 3px #666;}
-=======
 .one{width:100%;height:450px;float:left;background:url(../images/banner01.jpg) center center;}
 .one .content{width:35%;padding:0 20px;font-size:2.5rem;line-height:3rem;color:#fff;font-weight:700;position:absolute;bottom:80px;}
 .one .content{text-shadow:3px 3px 5px #333;}
->>>>>>> 66b904eb7e9cdc767761e165de5165cce005479b
 @media (max-width:1024px) {
     .one .content{width:100%;text-align:center;bottom:15px;}
 }
@@ -290,17 +287,13 @@ display: grid;
 #contato{width:100%;padding-bottom:50px;float:left;background:#43b8cd;}
 #contato h3{color:#fff;}
 #contato h3 span{background:#fff;}
-<<<<<<< HEAD
 #contato form{width:100%;float:left;position:relative}
-=======
 #contato form{width:100%;float:left;}
->>>>>>> 66b904eb7e9cdc767761e165de5165cce005479b
 #contato form .side{width:50%;float:left;}
 @media (max-width:1024px) {
     #contato form .side{width:100%;}
 }
 #contato form .field{width:100%;padding:10px;float:left;}
-<<<<<<< HEAD
 #contato form input[type=text],#contato form input[type=email],#contato form textarea{width:100%;padding:10px;float:left;border:none;border-radius:5px;font-size:1rem;}
 #contato form input[type=text]:focus,#contato form input[type=email]:focus,#contato form textarea:focus{border:1px solid #1f3c8c;}
 #contato form input[type=text],#contato form input[type=email],#contato form input[type=submit]{height:45px;}
@@ -308,14 +301,12 @@ display: grid;
 #contato form input[type=submit]:hover{background: #06133b;}
 #contato form textarea{height:110px;font-size:1.3rem !important;}
 .send-ok{width:100%;float:left;color:#1a690a;font-size:1.15rem;font-weight:700;position:absolute;bottom:-15px;left:20px;}
-=======
 #contato form input[type=text],#contato form textarea{width:100%;padding:10px;float:left;border:none;border-radius:5px;font-size:1rem;}
 #contato form input[type=text]:focus,#contato form textarea:focus{border:1px solid #1f3c8c;}
 #contato form input[type=text],#contato form input[type=submit]{height:45px;}
 #contato form input[type=submit]{padding:0 30px;background:#1f3c8c;color:#fff;border:none;border-radius:5px;font-size:1rem;float:right;cursor:pointer;transition:background 0.5s;}
 #contato form input[type=submit]:hover{background: #06133b;}
 #contato form textarea{height:110px;font-size:1.3rem !important;}
->>>>>>> 66b904eb7e9cdc767761e165de5165cce005479b
 footer{width:100%;height:290px;padding-bottom:50px;float:left;background:#1f3c8c;position:relative;}
 footer .go-up{width:50px;height:50px;padding:10px;border-radius:100%;background:#fff;color:#1F3C8C;font-size:2rem;text-align:center;position:absolute;top:-25px;left:50%;margin:0 -25px;}
 footer .go-up i{-webkit-animation: mover 0.7s infinite  alternate;
@@ -347,8 +338,5 @@ footer .copy{width:100%;padding-top:20px;float:left;border-top:1px solid #fff;te
 .ligue{padding-top:13px;bottom:80px;font-size:1.5rem;background:#1F3C8C;}
 .ligue:hover{background:#051646;}
 .whats{padding-top:10px;bottom:20px;font-size:1.75rem;background:#45DC27;}
-<<<<<<< HEAD
 .whats:hover{background:#1f7f0b;}
-=======
 .whats:hover{background:#1f7f0b;}
->>>>>>> 66b904eb7e9cdc767761e165de5165cce005479b
